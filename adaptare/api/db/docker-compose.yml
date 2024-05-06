@@ -4,12 +4,13 @@ services:
   postgres:
     image: postgres
     volumes:
-      - C:/Users/gabri/Downloads/Dockerfile/adaptare/api/db/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+      - ./Dockerfile/adaptare/api/db/schema.sql:/docker-entrypoint-initdb.d/schema.sql
     ports:
       - "5435:5432"
     networks:
-      - mynetwork
+      - adptare
     env_file:
       - env_file.env
 networks:
-  mynetwork:
+  adptare:
+    external: true
