@@ -68,3 +68,5 @@ Certifique-se de ter o Docker e o Docker Compose instalados em sua máquina. Voc
 - Este exemplo usa a porta padrão 5432 para PostgreSQL. Se você precisar alterá-la, atualize-a no arquivo `docker-compose.yml`.
 - Lembre-se de que os dados do banco de dados serão persistidos no volume Docker, a menos que você os exclua explicitamente.
 - Certifique-se de revisar e ajustar as configurações de segurança e acesso conforme necessário para o seu ambiente específico.
+- Para que a comunicação entre o banco de dados, o front-end e o back-end funcione corretamente, certifique-se de que todos os contêineres estejam na mesma rede Docker. Você pode configurar isso no arquivo docker-compose.yml usando a configuração de rede adequada.
+
