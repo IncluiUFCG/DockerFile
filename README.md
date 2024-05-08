@@ -1,4 +1,4 @@
-# Guia de Uso: Docker Compose para Banco de Dados PostgreSQL
+# Guia de Uso do IncluiUFCG: Docker Compose para Banco de Dados PostgreSQL
 
 Este guia fornecerá instruções passo a passo para criar e executar um contêiner Docker para subir um banco de dados PostgreSQL usando o Docker Compose.
 
