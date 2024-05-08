@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS tags (
 
 CREATE TABLE IF NOT EXISTS articles (
       id TEXT PRIMARY KEY UNIQUE NOT NULL,
-      title VARCHAR(255),
+      title TEXT,
       content TEXT,
       created_date TIMESTAMP,
       date_modified TIMESTAMP,
