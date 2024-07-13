@@ -24,6 +24,7 @@ CREATE TABLE IF NOT EXISTS articles (
       tag_id TEXT,
       external_references TEXT,
       image_description TEXT,
+      favorites INT,
       image BYTEA,
       FOREIGN KEY (user_id) REFERENCES users(id),
       FOREIGN KEY (tag_id ) REFERENCES tags(id)
